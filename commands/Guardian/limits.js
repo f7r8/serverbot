@@ -41,7 +41,7 @@ class Limits extends Command {
             embed.addField(`Role Deletions`, `**9.** Per Minute: **\`${limits.roleDeletions.minute}\`**\n **10.** Per Hour: **\`${limits.roleDeletions.hour}\`**`, true);
             embed.addField(`Pings`, `**11.** Per Minute: **\`${limits.pings.minute}\`**`, true);
             embed.setFooter('All of the user\'s roles are auto-removed if these limits are reached [Excluding Pings]');
-            embed.setDescription(`Updating Limits: **\`g!limits index value\`**`);
+            embed.setDescription(`Updating Limits: **\`#limits index value\`**`);
             
             // Send Embed
             return message.channel.send(embed);
