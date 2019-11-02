@@ -39,7 +39,7 @@ class Config extends Command {
             embed.setTitle(`Configuration for ${guild.name}`);
             embed.addField(`Roles`, `**1.** Muted Role: **\`${(mutedRole ? mutedRole.name : 'none')}\`**`, true);
             embed.addField(`Channels`, `**2.** Mod Log: **\`${(modLog ? `#${modLog.name}` : 'none')}\`**`)
-            embed.setDescription(`Updating Config: **\`g!config <index> [ value | "none" ]\`**`);
+            embed.setDescription(`Updating Config: **\`#config <index> [ value | "none" ]\`**`);
             
             // Send Embed
             return message.channel.send(embed);
